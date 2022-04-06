@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3D854C27FDE01400F1227C /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D854B27FDE01400F1227C /* AspectVGrid.swift */; };
 		3A5E0FEC27E7A5C700CABD05 /* SetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E0FEB27E7A5C700CABD05 /* SetApp.swift */; };
 		3A5E0FEE27E7A5C700CABD05 /* SetGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E0FED27E7A5C700CABD05 /* SetGameView.swift */; };
 		3A5E0FF027E7A5C900CABD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5E0FEF27E7A5C900CABD05 /* Assets.xcassets */; };
@@ -14,10 +15,10 @@
 		3A5E0FFA27E7AE0100CABD05 /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E0FF927E7AE0100CABD05 /* Diamond.swift */; };
 		3A5E0FFC27E7C2FA00CABD05 /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E0FFB27E7C2FA00CABD05 /* SetGame.swift */; };
 		3A5E100027E7D79500CABD05 /* SoloSetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E0FFF27E7D79500CABD05 /* SoloSetGame.swift */; };
-		3A5E100227E8ECED00CABD05 /* Squiggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E100127E8ECED00CABD05 /* Squiggle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A3D854B27FDE01400F1227C /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
 		3A5E0FE827E7A5C700CABD05 /* Set.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Set.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5E0FEB27E7A5C700CABD05 /* SetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetApp.swift; sourceTree = "<group>"; };
 		3A5E0FED27E7A5C700CABD05 /* SetGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameView.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		3A5E0FF927E7AE0100CABD05 /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
 		3A5E0FFB27E7C2FA00CABD05 /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
 		3A5E0FFF27E7D79500CABD05 /* SoloSetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloSetGame.swift; sourceTree = "<group>"; };
-		3A5E100127E8ECED00CABD05 /* Squiggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squiggle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,8 @@
 				3A5E0FED27E7A5C700CABD05 /* SetGameView.swift */,
 				3A5E0FFB27E7C2FA00CABD05 /* SetGame.swift */,
 				3A5E0FFF27E7D79500CABD05 /* SoloSetGame.swift */,
+				3A3D854B27FDE01400F1227C /* AspectVGrid.swift */,
 				3A5E0FF927E7AE0100CABD05 /* Diamond.swift */,
-				3A5E100127E8ECED00CABD05 /* Squiggle.swift */,
 				3A5E0FEF27E7A5C900CABD05 /* Assets.xcassets */,
 				3A5E0FF127E7A5C900CABD05 /* Preview Content */,
 			);
@@ -149,8 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A5E100227E8ECED00CABD05 /* Squiggle.swift in Sources */,
 				3A5E0FFA27E7AE0100CABD05 /* Diamond.swift in Sources */,
+				3A3D854C27FDE01400F1227C /* AspectVGrid.swift in Sources */,
 				3A5E0FEE27E7A5C700CABD05 /* SetGameView.swift in Sources */,
 				3A5E0FFC27E7C2FA00CABD05 /* SetGame.swift in Sources */,
 				3A5E0FEC27E7A5C700CABD05 /* SetApp.swift in Sources */,
