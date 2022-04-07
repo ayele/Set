@@ -87,6 +87,6 @@ struct ContentView_Previews: PreviewProvider {
         let game = SoloSetGame()
         SetGameView(game: game)
             .previewDevice("iPhone 12 mini")
-.previewInterfaceOrientation(.portrait)
+            .previewInterfaceOrientation(.portrait)
     }
 }

@@ -62,12 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				3A5E0FEB27E7A5C700CABD05 /* SetApp.swift */,
-				3A5E0FED27E7A5C700CABD05 /* SetGameView.swift */,
-				3A3D854D27FDFE8600F1227C /* Extention.swift */,
-				3A5E0FFB27E7C2FA00CABD05 /* SetGame.swift */,
 				3A5E0FFF27E7D79500CABD05 /* SoloSetGame.swift */,
-				3A3D854B27FDE01400F1227C /* AspectVGrid.swift */,
-				3A5E0FF927E7AE0100CABD05 /* Diamond.swift */,
+				3A91BA2627FF5297006D93B8 /* Model */,
+				3A91BA2527FF5285006D93B8 /* View */,
+				3A3D854D27FDFE8600F1227C /* Extention.swift */,
 				3A5E0FEF27E7A5C900CABD05 /* Assets.xcassets */,
 				3A5E0FF127E7A5C900CABD05 /* Preview Content */,
 			);
@@ -80,6 +78,24 @@
 				3A5E0FF227E7A5C900CABD05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3A91BA2527FF5285006D93B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E0FED27E7A5C700CABD05 /* SetGameView.swift */,
+				3A3D854B27FDE01400F1227C /* AspectVGrid.swift */,
+				3A5E0FF927E7AE0100CABD05 /* Diamond.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A91BA2627FF5297006D93B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E0FFB27E7C2FA00CABD05 /* SetGame.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

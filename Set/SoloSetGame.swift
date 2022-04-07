@@ -13,7 +13,7 @@ class SoloSetGame: ObservableObject {
     @Published private var model = SetGame()
     
     var cards: Array<Card> {
-        return model.cards
+        return model.dealtCards
     }
 
     // MARK: - intent(s)

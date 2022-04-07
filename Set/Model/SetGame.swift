@@ -9,9 +9,11 @@ import Foundation
 
 struct SetGame {
     private(set) var cards: Array<Card>
+    private(set) var dealtCards: Array<Card>
     
     init(){
         cards = []
+        dealtCards = []
         for shape in FeatureType.allCases {
             for number in FeatureType.allCases {
                 for color in FeatureType.allCases {
@@ -23,10 +25,17 @@ struct SetGame {
             }
         }
         cards.shuffle()
+        deal(12)
     }
     
     func select(_ card: Card) {
         
+    }
+    
+    mutating func deal(_ amount: Int) {
+        for index in 0...amount - 1 {
+            dealtCards.append(cards[index])
+        }
     }
         
     struct Card: Identifiable {
