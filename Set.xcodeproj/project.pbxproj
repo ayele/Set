@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A3D854C27FDE01400F1227C /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D854B27FDE01400F1227C /* AspectVGrid.swift */; };
+		3A3D854E27FDFE8600F1227C /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D854D27FDFE8600F1227C /* Extention.swift */; };
 		3A5E0FEC27E7A5C700CABD05 /* SetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E0FEB27E7A5C700CABD05 /* SetApp.swift */; };
 		3A5E0FEE27E7A5C700CABD05 /* SetGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E0FED27E7A5C700CABD05 /* SetGameView.swift */; };
 		3A5E0FF027E7A5C900CABD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5E0FEF27E7A5C900CABD05 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		3A3D854B27FDE01400F1227C /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		3A3D854D27FDFE8600F1227C /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		3A5E0FE827E7A5C700CABD05 /* Set.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Set.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5E0FEB27E7A5C700CABD05 /* SetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetApp.swift; sourceTree = "<group>"; };
 		3A5E0FED27E7A5C700CABD05 /* SetGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				3A5E0FEB27E7A5C700CABD05 /* SetApp.swift */,
 				3A5E0FED27E7A5C700CABD05 /* SetGameView.swift */,
+				3A3D854D27FDFE8600F1227C /* Extention.swift */,
 				3A5E0FFB27E7C2FA00CABD05 /* SetGame.swift */,
 				3A5E0FFF27E7D79500CABD05 /* SoloSetGame.swift */,
 				3A3D854B27FDE01400F1227C /* AspectVGrid.swift */,
@@ -155,6 +158,7 @@
 				3A5E0FFC27E7C2FA00CABD05 /* SetGame.swift in Sources */,
 				3A5E0FEC27E7A5C700CABD05 /* SetApp.swift in Sources */,
 				3A5E100027E7D79500CABD05 /* SoloSetGame.swift in Sources */,
+				3A3D854E27FDFE8600F1227C /* Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

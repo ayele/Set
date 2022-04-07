@@ -9,17 +9,20 @@ import Foundation
 
 struct SetGame {
     private(set) var cards: Array<Card>
-    private var selectedCards: Array<Card>
     
     init(){
         cards = []
-        selectedCards = []
-        var feature = Feature(shape: .first, number: .first, color: .second, shading: .second)
-        var card = Card(feature: feature, id: cards.count + 1)
-        cards.append(card)
-        feature = Feature(shape: .second, number: .first, color: .second, shading: .second)
-        card = Card(feature: feature, id: cards.count + 1)
-//        cards.append(card)
+        for shape in FeatureType.allCases {
+            for number in FeatureType.allCases {
+                for color in FeatureType.allCases {
+                    for shading in FeatureType.allCases {
+                        let card = Card(shape: shape, number: number, color: color, shading: shading)
+                        cards.append(card)
+                    }
+                }
+            }
+        }
+        cards.shuffle()
     }
     
     func select(_ card: Card) {
@@ -28,20 +31,17 @@ struct SetGame {
         
     struct Card: Identifiable {
         var isMatch: Bool = false
-        let feature: Feature
-        let id: Int
+        let id = UUID()
+        let shape: FeatureType
+        let number: FeatureType
+        let color: FeatureType
+        let shading: FeatureType
     }
     
-    struct Feature {
-        let shape: FeatureStyle
-        let number: FeatureStyle
-        let color: FeatureStyle
-        let shading: FeatureStyle
-    }
-    
-    enum FeatureStyle {
-        case first // diamond, 1, blue, solid
-        case second // squigle, 2, red, stripes
-        case third // rect, 3, green, none
+    enum FeatureType: CaseIterable {
+        case featureTypeOne // diamond, 1, blue, solid
+        case featureTypeTwo // squigle, 2, red, stripes
+        case featureTypeThree // rect, 3, green, none
     }
 }
+
