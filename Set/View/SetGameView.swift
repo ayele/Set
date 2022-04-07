@@ -24,15 +24,10 @@ struct SetGameView: View {
                     .padding()
                     .background(.blue)
                     .cornerRadius(8)
-                Spacer()
-                Button("New Game") {}
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(.blue)
-                    .cornerRadius(8)
             }
             .padding()
         }
+        .navigationTitle("Set Game")
         .background(Color(hex: "dcdee2"))
         .toolbar {
             Button("New Game"){}
@@ -113,8 +108,10 @@ private func getColor(for feature: SetGame.FeatureType) -> Color {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let game = SoloSetGame()
-        SetGameView(game: game)
-            .previewDevice("iPhone 12 mini")
+        NavigationView {
+            SetGameView(game: game)
+                .previewDevice("iPhone 12 mini")
             .previewInterfaceOrientation(.portrait)
+        }
     }
 }

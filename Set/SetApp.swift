@@ -12,7 +12,9 @@ struct SetApp: App {
     private let game = SoloSetGame()
     var body: some Scene {
         WindowGroup {
-            SetGameView(game: game)
+            NavigationView {
+                SetGameView(game: game)
+            }
         }
     }
 }
