@@ -49,16 +49,44 @@ struct CardView: View {
                 RoundedRectangle(cornerRadius: 2)
                     .foregroundColor(.white)
                 HStack{
-                    Capsule()
-                        .stroke(lineWidth: 2)
-                        .aspectRatio(1/2, contentMode: .fit)
-                        .frame(width: geometry.size.width * 2/3, height: geometry.size.height * 2/3)
-                        .foregroundColor(getColor(for: card.color))
+                    ForEach(0..<getNumber(for: card.number)) { index in
+                        if card.shape == .featureTypeOne {
+                            Diamond()
+                                .stroke(lineWidth: DrawingConstants.lineWidth)
+                                .aspectRatio(DrawingConstants.aspectRatio, contentMode: .fit)
+                        } else if card.shape == .featureTypeTwo {
+                            Squiggle()
+                                .stroke(lineWidth: DrawingConstants.lineWidth)
+                                .aspectRatio(DrawingConstants.aspectRatio, contentMode: .fit)
+                        } else {
+                            Capsule()
+                                .stroke(lineWidth: DrawingConstants.lineWidth)
+                                .aspectRatio(DrawingConstants.aspectRatio, contentMode: .fit)
+                        }
+                        
+                    }
                 }
+                .foregroundColor(getColor(for: card.color))
+                .frame(width: geometry.size.width * 2/3, height: geometry.size.height * 2/3)
                 
             }
         }
     }
+    
+    private struct DrawingConstants {
+        static let lineWidth: CGFloat = 2
+        static let aspectRatio: CGFloat = 1/2
+    }
+}
+
+private func getNumber(for feature: SetGame.FeatureType) -> Int {
+    let number: Int
+    switch feature {
+    case .featureTypeOne: number = 1
+    case .featureTypeTwo: number = 2
+    default: number = 3
+    }
+    return number
 }
 
 private func getColor(for feature: SetGame.FeatureType) -> Color {
