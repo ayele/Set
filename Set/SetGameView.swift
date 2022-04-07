@@ -16,13 +16,22 @@ struct SetGameView: View {
                 CardView(card: card)
                     .padding(4)
             }
-            .padding(.horizontal)
+            .padding()
             
-            Button("Deal") {}
-                .foregroundColor(.white)
-                .padding()
-                .background(.blue)
-                .cornerRadius(8)
+            HStack {
+                Button("Deal") {}
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(.blue)
+                    .cornerRadius(8)
+                Spacer()
+                Button("New Game") {}
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(.blue)
+                    .cornerRadius(8)
+            }
+            .padding()
         }
         .background(Color(hex: "dcdee2"))
         .toolbar {
