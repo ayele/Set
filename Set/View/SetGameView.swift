@@ -49,7 +49,7 @@ struct CardView: View {
                 RoundedRectangle(cornerRadius: 2)
                     .foregroundColor(.white)
                 HStack{
-                    Diamond()
+                    Capsule()
                         .stroke(lineWidth: 2)
                         .aspectRatio(1/2, contentMode: .fit)
                         .frame(width: geometry.size.width * 2/3, height: geometry.size.height * 2/3)
