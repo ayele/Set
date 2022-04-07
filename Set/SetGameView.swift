@@ -12,7 +12,7 @@ struct SetGameView: View {
     
     var body: some View {
         VStack {
-            AspectVGrid(items: game.cards, aspectRatio: 2/3) { card in
+            AspectVGrid(items: game.cards, aspectRatio: 3/2) { card in
                 CardView(card: card)
                     .padding(4)
             }
@@ -44,16 +44,19 @@ struct CardView: View {
     let card: SetGame.Card
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .foregroundColor(.white)
-            HStack{
-                Diamond()
-                    .stroke(lineWidth: 2)
-                    .frame(width: 30, height: 60)
-                    .foregroundColor(getColor(for: card.color))
+        GeometryReader { geometry in
+            ZStack {
+                RoundedRectangle(cornerRadius: 2)
+                    .foregroundColor(.white)
+                HStack{
+                    Diamond()
+                        .stroke(lineWidth: 2)
+                        .aspectRatio(1/2, contentMode: .fit)
+                        .frame(width: geometry.size.width * 2/3, height: geometry.size.height * 2/3)
+                        .foregroundColor(getColor(for: card.color))
+                }
+                
             }
-            
         }
     }
 }
