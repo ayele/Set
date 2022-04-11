@@ -18,7 +18,7 @@ class SoloSetGame: ObservableObject {
 
     // MARK: - intent(s)
 
-    func choose(_ card: Card) {
+    func select(_ card: Card) {
         model.select(card)
     }
 }
