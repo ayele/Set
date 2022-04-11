@@ -15,6 +15,15 @@ struct CardView: View {
             ZStack {
                 RoundedRectangle(cornerRadius: DrawingConstants.cornerRadius)
                     .foregroundColor(.white)
+                if card.isSelected {
+                    RoundedRectangle(cornerRadius: DrawingConstants.cornerRadius)
+                        .stroke(lineWidth: 2)
+                    if card.isMatch {
+                        RoundedRectangle(cornerRadius: DrawingConstants.cornerRadius)
+                            .stroke(lineWidth: 2)
+                            .foregroundColor(.green)
+                    }
+                }
                 HStack {
                     ForEach(0..<getNumber(for: card.number)) { index in
                         getShape(for: card.shape)
@@ -76,6 +85,7 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(card: SetGame.Card(shape: .featureTypeTwo, number: .featureTypeTwo, color: .featureTypeOne, shading: .featureTypeThree))
+        CardView(card: SetGame.Card(isSelected: true, shape: .featureTypeOne, number: .featureTypeTwo, color: .featureTypeOne, shading: .featureTypeThree))
+            .previewLayout(.sizeThatFits)
     }
 }

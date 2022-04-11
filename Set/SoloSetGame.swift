@@ -21,6 +21,10 @@ class SoloSetGame: ObservableObject {
     func select(_ card: Card) {
         model.select(card)
     }
+    
+    func deal(_ numberOfCards: Int) {
+        model.deal(numberOfCards)
+    }
 }
 
 

@@ -22,7 +22,7 @@ struct SetGameView: View {
             .padding()
             
             Button {
-                
+                game.deal(3)
             } label: {
                 Text("Deal")
                     .frame(minWidth: 0, maxWidth: .infinity)
