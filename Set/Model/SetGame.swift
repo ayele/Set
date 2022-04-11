@@ -33,6 +33,17 @@ struct SetGame {
     mutating func select(_ card: Card) {
         
         if let index = dealtCards.index(matching: card) {
+            
+            let selectedArray = dealtCards.filter({ $0.isSelected })
+            
+            if selectedArray.count == 3 {
+                for card in dealtCards {
+                    if let index = dealtCards.index(matching: card) {
+                        dealtCards[index].isSelected = false
+                    }
+                }
+            }
+            
             dealtCards[index].isSelected.toggle()
         }
         
@@ -110,6 +121,10 @@ struct SetGame {
                 deck.remove(card)
             }
         }
+    }
+    
+    func newGame() {
+        
     }
         
     struct Card: Identifiable {

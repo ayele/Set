@@ -25,6 +25,10 @@ class SoloSetGame: ObservableObject {
     func deal(_ numberOfCards: Int) {
         model.deal(numberOfCards)
     }
+    
+    func newGame() {
+        model = SetGame()
+    }
 }
 
 

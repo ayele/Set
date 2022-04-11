@@ -34,7 +34,9 @@ struct SetGameView: View {
         .navigationTitle("Set Game")
         .background(Color(hex: "dcdee2"))
         .toolbar {
-            Button("New Game"){}
+            Button("New Game"){
+                game.newGame()
+            }
         }
     }
 }
